@@ -16,7 +16,7 @@
 <!-- Dropdown menu -->
 <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a class="smoothscroll" href="#about">About</a></li>
+  <li><a class="smoothscroll" href="#modal1">Translate</a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Something <img src="screenshot.png" width="10" height="10"></a>
     <div class="dropdown-content">
@@ -26,20 +26,24 @@
   <li><a href="#contact" class="smoothscroll">Contact</a></li>
 </ul>
 
-<section id="home">
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Translate</h4>
+      
+      <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
   
- <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red">
-      <i class="material-icons">&#xE0D0;</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">search</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">contact_mail</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">people</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">translate</i></a></li>
-      <li><a class="btn-floating purple"><i class="material-icons">fullscreen</i></a></li>
-    </ul>
-  </div>  
+<section id="home">
 
 <!-- RipOff Games title -->
 <div id="title">
