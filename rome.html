@@ -12,37 +12,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   </head>
   <body>
-
-<!-- Dropdown menu -->
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a class="smoothscroll" href="#modal1">Translate</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Something <img src="screenshot.png" width="10" height="10"></a>
-    <div class="dropdown-content">
-      <a href="#"></a>
+    <!--Navbar-->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="#home" class="smoothscroll">Home</a></li>
+        <li><a href="#about" class="smoothscroll">About</a></li>
+        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+        <li>
+        	      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+        </li>
+      </ul>
     </div>
-  </li>
-  <li><a href="#contact" class="smoothscroll">Contact</a></li>
-</ul>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Translate</h4>
-      
-      <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+  </nav>
   </div>
-  
 <section id="home">
 
 <!-- RipOff Games title -->
